@@ -40,8 +40,8 @@ $pdo->query(/** @lang sql */'CREATE TABLE IF NOT EXISTS user (
           id TEXT,
           name TEXT
 )');
-/** @var User $user */
-$user = $injector->getInstance(User::class);
+/** @var UserRepository $user */
+$user = $injector->getInstance(UserRepository::class);
 $user->add('1', 'koriym');
 $userItem = $user->get('1');
 echo $userItem['name'] === 'koriym' ? 'It works!' : 'It dones not work.';

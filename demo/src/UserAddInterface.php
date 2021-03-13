@@ -9,5 +9,5 @@ use Ray\MediaQuery\Annotation\DbQuery;
 interface UserAddInterface
 {
     #[DbQuery('user_add')]
-    public function __invoke(string $id, string $name): void;
+    public function add(string $id, string $name): void;
 }

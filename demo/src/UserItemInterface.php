@@ -12,5 +12,5 @@ interface UserItemInterface
      * @return array{id: string, name: string}
      */
     #[DbQuery('user_item')]
-    public function __invoke(string $id): array;
+    public function get(string $id): array;
 }
